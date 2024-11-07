@@ -1,1 +1,0 @@
-var json_EstaqueoVAU5_12 = {"type":"FeatureCollection","name":"EstaqueoVAU5_12","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":null},"geometry":{"type":"MultiLineString","coordinates":[[[-57.577189331129873,-25.303129935379353],[-57.577545073330121,-25.30385639162726]]]}}]}
