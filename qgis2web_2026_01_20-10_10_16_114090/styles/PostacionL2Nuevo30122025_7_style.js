@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_PostacionL2Nuevo02112025_7 = function(feature, resolution){
+var style_PostacionL2Nuevo30122025_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

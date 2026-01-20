@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:32721").setExtent([443077.737512, 7198903.138277, 446808.760171, 7200868.302989]);
+//ol.proj.get("EPSG:32721").setExtent([449762.362956, 7218445.210286, 450381.487956, 7218771.309245]);
 var wms_layers = [];
 
 
@@ -84,35 +84,35 @@ var lyr_PostacionSistL2Nuevo26082025_5 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/PostacionSistL2Nuevo26082025_5.png" /> Postacion Sist L2 Nuevo 26-08-2025'
             });
-var format_PostacionL2Exist02112025_6 = new ol.format.GeoJSON();
-var features_PostacionL2Exist02112025_6 = format_PostacionL2Exist02112025_6.readFeatures(json_PostacionL2Exist02112025_6, 
+var format_PostacionL2Exist30122025_6 = new ol.format.GeoJSON();
+var features_PostacionL2Exist30122025_6 = format_PostacionL2Exist30122025_6.readFeatures(json_PostacionL2Exist30122025_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:32721'});
-var jsonSource_PostacionL2Exist02112025_6 = new ol.source.Vector({
+var jsonSource_PostacionL2Exist30122025_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PostacionL2Exist02112025_6.addFeatures(features_PostacionL2Exist02112025_6);
-var lyr_PostacionL2Exist02112025_6 = new ol.layer.Vector({
+jsonSource_PostacionL2Exist30122025_6.addFeatures(features_PostacionL2Exist30122025_6);
+var lyr_PostacionL2Exist30122025_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PostacionL2Exist02112025_6, 
-                style: style_PostacionL2Exist02112025_6,
-                popuplayertitle: 'Postacion L2 Exist 02-11-2025',
+                source:jsonSource_PostacionL2Exist30122025_6, 
+                style: style_PostacionL2Exist30122025_6,
+                popuplayertitle: 'Postacion L2 Exist 30-12-2025',
                 interactive: true,
-                title: '<img src="styles/legend/PostacionL2Exist02112025_6.png" /> Postacion L2 Exist 02-11-2025'
+                title: '<img src="styles/legend/PostacionL2Exist30122025_6.png" /> Postacion L2 Exist 30-12-2025'
             });
-var format_PostacionL2Nuevo02112025_7 = new ol.format.GeoJSON();
-var features_PostacionL2Nuevo02112025_7 = format_PostacionL2Nuevo02112025_7.readFeatures(json_PostacionL2Nuevo02112025_7, 
+var format_PostacionL2Nuevo30122025_7 = new ol.format.GeoJSON();
+var features_PostacionL2Nuevo30122025_7 = format_PostacionL2Nuevo30122025_7.readFeatures(json_PostacionL2Nuevo30122025_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:32721'});
-var jsonSource_PostacionL2Nuevo02112025_7 = new ol.source.Vector({
+var jsonSource_PostacionL2Nuevo30122025_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PostacionL2Nuevo02112025_7.addFeatures(features_PostacionL2Nuevo02112025_7);
-var lyr_PostacionL2Nuevo02112025_7 = new ol.layer.Vector({
+jsonSource_PostacionL2Nuevo30122025_7.addFeatures(features_PostacionL2Nuevo30122025_7);
+var lyr_PostacionL2Nuevo30122025_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PostacionL2Nuevo02112025_7, 
-                style: style_PostacionL2Nuevo02112025_7,
-                popuplayertitle: 'Postacion L2 Nuevo 02-11-2025',
+                source:jsonSource_PostacionL2Nuevo30122025_7, 
+                style: style_PostacionL2Nuevo30122025_7,
+                popuplayertitle: 'Postacion L2 Nuevo 30-12-2025',
                 interactive: true,
-                title: '<img src="styles/legend/PostacionL2Nuevo02112025_7.png" /> Postacion L2 Nuevo 02-11-2025'
+                title: '<img src="styles/legend/PostacionL2Nuevo30122025_7.png" /> Postacion L2 Nuevo 30-12-2025'
             });
 var format_MT240L2Subterrneo_8 = new ol.format.GeoJSON();
 var features_MT240L2Subterrneo_8 = format_MT240L2Subterrneo_8.readFeatures(json_MT240L2Subterrneo_8, 
@@ -291,7 +291,7 @@ var group_LOTE1 = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'LOTE 1'});
 var group_LOTE2 = new ol.layer.Group({
-                                layers: [lyr_postesExistentesLote2_2,lyr_PostacinfichasL22808_3,lyr_PostacionSistL2Exist26082025_4,lyr_PostacionSistL2Nuevo26082025_5,lyr_PostacionL2Exist02112025_6,lyr_PostacionL2Nuevo02112025_7,],
+                                layers: [lyr_postesExistentesLote2_2,lyr_PostacinfichasL22808_3,lyr_PostacionSistL2Exist26082025_4,lyr_PostacionSistL2Nuevo26082025_5,lyr_PostacionL2Exist30122025_6,lyr_PostacionL2Nuevo30122025_7,],
                                 fold: 'close',
                                 title: 'LOTE 2'});
 var group_FDM1 = new ol.layer.Group({
@@ -304,7 +304,7 @@ var group_FDM2 = new ol.layer.Group({
                                 title: 'FDM2'});
 var group_FDM5 = new ol.layer.Group({
                                 layers: [],
-                                fold: 'close',
+                                fold: 'open',
                                 title: 'FDM5'});
 var group_VAU1 = new ol.layer.Group({
                                 layers: [],
@@ -348,7 +348,7 @@ var group_VAU24 = new ol.layer.Group({
                                 title: 'VAU24'});
 var group_VAU25 = new ol.layer.Group({
                                 layers: [],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'VAU25'});
 var group_VAU28 = new ol.layer.Group({
                                 layers: [],
@@ -411,14 +411,14 @@ var group_MPAADEUBICACN = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'MPAA DE UBICACÓN'});
 
-lyr_GoogleHybrid_0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr_postesExistentesLote2_2.setVisible(true);lyr_PostacinfichasL22808_3.setVisible(true);lyr_PostacionSistL2Exist26082025_4.setVisible(true);lyr_PostacionSistL2Nuevo26082025_5.setVisible(true);lyr_PostacionL2Exist02112025_6.setVisible(true);lyr_PostacionL2Nuevo02112025_7.setVisible(true);lyr_MT240L2Subterrneo_8.setVisible(true);lyr_BT3x701x501x25_9.setVisible(true);lyr_MT3x35L2_10.setVisible(true);lyr_MT3x70L2_11.setVisible(true);lyr_MT3x185L2_12.setVisible(true);lyr_PDL2_13.setVisible(true);lyr_FichaPDL2Sist02072025_14.setVisible(true);lyr_PDL2sist2112025_15.setVisible(true);
+lyr_GoogleHybrid_0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr_postesExistentesLote2_2.setVisible(true);lyr_PostacinfichasL22808_3.setVisible(true);lyr_PostacionSistL2Exist26082025_4.setVisible(true);lyr_PostacionSistL2Nuevo26082025_5.setVisible(true);lyr_PostacionL2Exist30122025_6.setVisible(true);lyr_PostacionL2Nuevo30122025_7.setVisible(true);lyr_MT240L2Subterrneo_8.setVisible(true);lyr_BT3x701x501x25_9.setVisible(true);lyr_MT3x35L2_10.setVisible(true);lyr_MT3x70L2_11.setVisible(true);lyr_MT3x185L2_12.setVisible(true);lyr_PDL2_13.setVisible(true);lyr_FichaPDL2Sist02072025_14.setVisible(true);lyr_PDL2sist2112025_15.setVisible(true);
 var layersList = [lyr_GoogleHybrid_0,lyr_OpenStreetMap_1,group_LOTE2,lyr_MT240L2Subterrneo_8,lyr_BT3x701x501x25_9,lyr_MT3x35L2_10,lyr_MT3x70L2_11,lyr_MT3x185L2_12,group_Lote2];
 lyr_postesExistentesLote2_2.set('fieldAliases', {'Nro. De So': 'Nro. De So', 'Tipo de Po': 'Tipo de Po', 'Coord.X': 'Coord.X', 'Coord. Y': 'Coord. Y', 'X': 'X', 'y': 'y', 'xx': 'xx', 'yy': 'yy', });
 lyr_PostacinfichasL22808_3.set('fieldAliases', {'Alimentado': 'Alimentado', 'Nro de Sos': 'Nro de Sos', 'tipo/poste': 'tipo/poste', 'Coord. X.': 'Coord. X.', 'Coord. Y': 'Coord. Y', 'X': 'X', 'Coord X': 'Coord X', 'Coord X.': 'Coord X.', 'Coord Y.': 'Coord Y.', 'Coor X': 'Coor X', 'Coor Y': 'Coor Y', });
 lyr_PostacionSistL2Exist26082025_4.set('fieldAliases', {'#': '#', 'Alimentadores Lote 2': 'Alimentadores Lote 2', 'Numero de Sosten': 'Numero de Sosten', 'Tipo de Poste': 'Tipo de Poste', 'N�mero de F�brica del Poste': 'N�mero de F�brica del Poste', 'Longitud': 'Longitud', 'Latitud': 'Latitud', });
 lyr_PostacionSistL2Nuevo26082025_5.set('fieldAliases', {'#': '#', 'Alimentadores Lote 2': 'Alimentadores Lote 2', 'Numero de Sosten': 'Numero de Sosten', 'Tipo de Poste': 'Tipo de Poste', 'N�mero de F�brica del Poste': 'N�mero de F�brica del Poste', 'Longitud': 'Longitud', 'Latitud': 'Latitud', });
-lyr_PostacionL2Exist02112025_6.set('fieldAliases', {'LATITUD': 'LATITUD', 'LONGITUD': 'LONGITUD', 'ALIMENTADOR': 'ALIMENTADOR', 'NRO_SOSTEN': 'NRO_SOSTEN', 'TIPO_POSTE': 'TIPO_POSTE', });
-lyr_PostacionL2Nuevo02112025_7.set('fieldAliases', {'LATITUD': 'LATITUD', 'LONGITUD': 'LONGITUD', 'ALIMENTADOR': 'ALIMENTADOR', 'NRO_SOSTEN': 'NRO_SOSTEN', 'TIPO_POSTE': 'TIPO_POSTE', });
+lyr_PostacionL2Exist30122025_6.set('fieldAliases', {'LATITUD': 'LATITUD', 'LONGITUD': 'LONGITUD', 'ALIMENTADOR': 'ALIMENTADOR', 'NRO_SOSTEN': 'NRO_SOSTEN', 'TIPO_POSTE': 'TIPO_POSTE', });
+lyr_PostacionL2Nuevo30122025_7.set('fieldAliases', {'LATITUD': 'LATITUD', 'LONGITUD': 'LONGITUD', 'ALIMENTADOR': 'ALIMENTADOR', 'NRO_SOSTEN': 'NRO_SOSTEN', 'TIPO_POSTE': 'TIPO_POSTE', 'Grupo': 'Grupo', });
 lyr_MT240L2Subterrneo_8.set('fieldAliases', {'Fecha': 'Fecha', 'Inicio-Fin': 'Inicio-Fin', 'Longitud': 'Longitud', 'corte': 'corte', 'ítem': 'ítem', 'Alimentado': 'Alimentado', });
 lyr_BT3x701x501x25_9.set('fieldAliases', {'FECHA': 'FECHA', 'INICIO-FIN': 'INICIO-FIN', 'LONGITUD': 'LONGITUD', 'ALIMENT': 'ALIMENT', 'CORTE': 'CORTE', 'ÍTEM': 'ÍTEM', 'Inicio-F_1': 'Inicio-F_1', });
 lyr_MT3x35L2_10.set('fieldAliases', {'FECHA': 'FECHA', 'INICIO-FIN': 'INICIO-FIN', 'LONGITUD': 'LONGITUD', 'Alimentado': 'Alimentado', 'ítem': 'ítem', 'corte': 'corte', });
@@ -431,8 +431,8 @@ lyr_postesExistentesLote2_2.set('fieldImages', {'Nro. De So': 'TextEdit', 'Tipo 
 lyr_PostacinfichasL22808_3.set('fieldImages', {'Alimentado': 'TextEdit', 'Nro de Sos': 'TextEdit', 'tipo/poste': 'TextEdit', 'Coord. X.': 'TextEdit', 'Coord. Y': 'TextEdit', 'X': 'TextEdit', 'Coord X': 'TextEdit', 'Coord X.': 'TextEdit', 'Coord Y.': 'TextEdit', 'Coor X': 'TextEdit', 'Coor Y': 'TextEdit', });
 lyr_PostacionSistL2Exist26082025_4.set('fieldImages', {'#': 'Range', 'Alimentadores Lote 2': 'TextEdit', 'Numero de Sosten': 'TextEdit', 'Tipo de Poste': 'TextEdit', 'N�mero de F�brica del Poste': 'TextEdit', 'Longitud': 'TextEdit', 'Latitud': 'TextEdit', });
 lyr_PostacionSistL2Nuevo26082025_5.set('fieldImages', {'#': 'Range', 'Alimentadores Lote 2': 'TextEdit', 'Numero de Sosten': 'TextEdit', 'Tipo de Poste': 'TextEdit', 'N�mero de F�brica del Poste': 'TextEdit', 'Longitud': 'TextEdit', 'Latitud': 'TextEdit', });
-lyr_PostacionL2Exist02112025_6.set('fieldImages', {'LATITUD': 'TextEdit', 'LONGITUD': 'TextEdit', 'ALIMENTADOR': 'TextEdit', 'NRO_SOSTEN': 'TextEdit', 'TIPO_POSTE': 'TextEdit', });
-lyr_PostacionL2Nuevo02112025_7.set('fieldImages', {'LATITUD': 'TextEdit', 'LONGITUD': 'TextEdit', 'ALIMENTADOR': 'TextEdit', 'NRO_SOSTEN': 'TextEdit', 'TIPO_POSTE': 'TextEdit', });
+lyr_PostacionL2Exist30122025_6.set('fieldImages', {'LATITUD': 'TextEdit', 'LONGITUD': 'TextEdit', 'ALIMENTADOR': 'TextEdit', 'NRO_SOSTEN': 'TextEdit', 'TIPO_POSTE': 'TextEdit', });
+lyr_PostacionL2Nuevo30122025_7.set('fieldImages', {'LATITUD': 'TextEdit', 'LONGITUD': 'TextEdit', 'ALIMENTADOR': 'TextEdit', 'NRO_SOSTEN': 'TextEdit', 'TIPO_POSTE': 'TextEdit', 'Grupo': '', });
 lyr_MT240L2Subterrneo_8.set('fieldImages', {'Fecha': 'TextEdit', 'Inicio-Fin': 'TextEdit', 'Longitud': 'TextEdit', 'corte': 'TextEdit', 'ítem': 'TextEdit', 'Alimentado': 'TextEdit', });
 lyr_BT3x701x501x25_9.set('fieldImages', {'FECHA': 'TextEdit', 'INICIO-FIN': 'TextEdit', 'LONGITUD': 'TextEdit', 'ALIMENT': 'TextEdit', 'CORTE': 'TextEdit', 'ÍTEM': 'TextEdit', 'Inicio-F_1': '', });
 lyr_MT3x35L2_10.set('fieldImages', {'FECHA': 'TextEdit', 'INICIO-FIN': 'TextEdit', 'LONGITUD': 'TextEdit', 'Alimentado': 'TextEdit', 'ítem': 'TextEdit', 'corte': 'TextEdit', });
@@ -445,8 +445,8 @@ lyr_postesExistentesLote2_2.set('fieldLabels', {'Nro. De So': 'inline label - vi
 lyr_PostacinfichasL22808_3.set('fieldLabels', {'Alimentado': 'inline label - visible with data', 'Nro de Sos': 'inline label - visible with data', 'tipo/poste': 'inline label - visible with data', 'Coord. X.': 'inline label - visible with data', 'Coord. Y': 'inline label - visible with data', 'X': 'inline label - visible with data', 'Coord X': 'no label', 'Coord X.': 'no label', 'Coord Y.': 'no label', 'Coor X': 'no label', 'Coor Y': 'no label', });
 lyr_PostacionSistL2Exist26082025_4.set('fieldLabels', {'#': 'no label', 'Alimentadores Lote 2': 'no label', 'Numero de Sosten': 'no label', 'Tipo de Poste': 'no label', 'N�mero de F�brica del Poste': 'no label', 'Longitud': 'no label', 'Latitud': 'no label', });
 lyr_PostacionSistL2Nuevo26082025_5.set('fieldLabels', {'#': 'no label', 'Alimentadores Lote 2': 'no label', 'Numero de Sosten': 'no label', 'Tipo de Poste': 'no label', 'N�mero de F�brica del Poste': 'no label', 'Longitud': 'no label', 'Latitud': 'no label', });
-lyr_PostacionL2Exist02112025_6.set('fieldLabels', {'LATITUD': 'no label', 'LONGITUD': 'no label', 'ALIMENTADOR': 'no label', 'NRO_SOSTEN': 'no label', 'TIPO_POSTE': 'no label', });
-lyr_PostacionL2Nuevo02112025_7.set('fieldLabels', {'LATITUD': 'no label', 'LONGITUD': 'no label', 'ALIMENTADOR': 'no label', 'NRO_SOSTEN': 'no label', 'TIPO_POSTE': 'no label', });
+lyr_PostacionL2Exist30122025_6.set('fieldLabels', {'LATITUD': 'no label', 'LONGITUD': 'no label', 'ALIMENTADOR': 'no label', 'NRO_SOSTEN': 'no label', 'TIPO_POSTE': 'no label', });
+lyr_PostacionL2Nuevo30122025_7.set('fieldLabels', {'LATITUD': 'no label', 'LONGITUD': 'no label', 'ALIMENTADOR': 'no label', 'NRO_SOSTEN': 'no label', 'TIPO_POSTE': 'no label', 'Grupo': 'no label', });
 lyr_MT240L2Subterrneo_8.set('fieldLabels', {'Fecha': 'inline label - visible with data', 'Inicio-Fin': 'inline label - visible with data', 'Longitud': 'inline label - visible with data', 'corte': 'inline label - visible with data', 'ítem': 'inline label - visible with data', 'Alimentado': 'inline label - visible with data', });
 lyr_BT3x701x501x25_9.set('fieldLabels', {'FECHA': 'inline label - visible with data', 'INICIO-FIN': 'inline label - visible with data', 'LONGITUD': 'inline label - visible with data', 'ALIMENT': 'inline label - visible with data', 'CORTE': 'inline label - visible with data', 'ÍTEM': 'inline label - visible with data', 'Inicio-F_1': 'no label', });
 lyr_MT3x35L2_10.set('fieldLabels', {'FECHA': 'inline label - visible with data', 'INICIO-FIN': 'inline label - visible with data', 'LONGITUD': 'inline label - visible with data', 'Alimentado': 'inline label - visible with data', 'ítem': 'inline label - visible with data', 'corte': 'inline label - visible with data', });
